@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "identity",
+  "version": "${version}",
+  "name": "Identity (SkreperiukasLTU fork)",
+  "description": "Identity mod fork for Origins",
+  "authors": [
+    "Draylar",
+    "Forker: SkreperiukasLTU"
+  ],
+  "contributors": [
+    "James103",
+    "Pyrofab",
+    "AllanChain"
+  ],
+  "license": "MIT",
+  "icon": "assets/identity/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "draylar.identity.fabric.IdentityFabric"
+    ],
+    "client": [
+      "draylar.identity.fabric.IdentityFabricClient"
+    ],
+    "cardinal-components": [
+      "draylar.identity.ModComponents"
+    ]
+  },
+  "mixins": [
+    "identity.mixins.json",
+    "identity-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.7+build.201",
+    "fabric": "*",
+    "architectury": "*",
+    "origins": ">=1.10.0"
+  },
+  "custom": {
+        "cardinal-components": [
+            "identity:identity_cooldown",
+            "identity:identity_duration"
+        ]
+  }
+}

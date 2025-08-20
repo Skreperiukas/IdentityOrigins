@@ -1,0 +1,16 @@
+{
+	
+	"change_identity": {
+		
+		"subtitle": "sounds.identity.identity.change",
+		"sounds": [
+			
+			"identity:identity_crack_1",
+			"identity:identity_crack_2",
+			"identity:identity_crack_3"
+			
+		]
+		
+	}
+	
+}
